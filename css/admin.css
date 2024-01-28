@@ -1,0 +1,50 @@
+@import url(../fonts/remixicon/remixicon.css);
+@import url(../fonts/poppins/poppins.css);
+
+[data-bs-theme="dark"] body {
+  background-color: #171a1d;
+}
+[data-bs-theme="light"] body {
+  background-color: #F2F7FF;
+}
+.pop {
+  font-family: "Poppins";
+}
+.bt-theme {
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+}
+.sidebar {
+  max-height: calc(100vh - 60px);
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+}
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #d0d0d0;
+  border-radius: 3px;
+}
+.sidebar .nav-link {
+  color: var(--bs-body-color);
+  border-radius: 8px;
+}
+.sidebar .nav-link i {
+  color: #7C8DB5;
+}
+.sidebar .nav-link.active i {
+  color: white;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link.active:hover {
+  background-color: #435EBE;
+  color: white;
+}
+.sidebar .nav-link:hover {
+  background-color: #435EBE1a;
+}
+.sidebar .nav-link:active {
+  background-color: #435EBE30;
+}
